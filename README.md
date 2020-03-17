@@ -45,7 +45,7 @@ $ roslaunch cartographer_vlp16-imu_config  assets_writer_vlp16-imu.launch \
   * 結果
   ![result](img/result.png)
 ## 其他
-  * 因為cartographer使用protobuf3, gazebo使用protobuf2,可以把cartographer的刪掉
+  * 因為cartographer使用protobuf3, gazebo使用protobuf2,可以把cartographer內的protobuf刪掉
 
 ```
 $ rm -rf protobuf/
