@@ -8,7 +8,7 @@
   [2019-12-18-13-37-34.bag](https://drive.google.com/open?id=1YJY3EXCXTad67RsgrSPB3GPyhsPsDDoH)  
   [其他資料](https://drive.google.com/open?id=1uZAqH_6JQV0LuT0MIumaLouNN_BezRu7)
 
-#建置
+## 建置
 ```bash
 $ catkin_make_isolated --install --use-ninja
 $ source install_isolated/setup.bash
@@ -66,5 +66,6 @@ $ catkin_make_isolated --install --use-ninja
     * [測試資料](https://drive.google.com/open?id=1yZdbekNmNkPBytlXquzZTz28PQBtAETj)
   * 其他測試bag
     * [cartographer_kitti_config](https://github.com/inkyusa/cartographer_kitti_config)
-  * 參考
-    * [TurtleBot3 SLAM](http://emanual.robotis.com/docs/en/platform/turtlebot3/slam/)
+## 參考
+  * [Cartographer ROS Integration](https://google-cartographer-ros.readthedocs.io/en/latest/)
+  * [TurtleBot3 SLAM](http://emanual.robotis.com/docs/en/platform/turtlebot3/slam/)
