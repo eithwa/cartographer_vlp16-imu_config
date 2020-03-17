@@ -7,12 +7,20 @@
 ## bagfile
   [2019-12-18-13-37-34.bag](https://drive.google.com/open?id=1YJY3EXCXTad67RsgrSPB3GPyhsPsDDoH)  
   [其他資料](https://drive.google.com/open?id=1uZAqH_6JQV0LuT0MIumaLouNN_BezRu7)
+
+#建置
+```bash
+$ catkin_make_isolated --install --use-ninja
+$ source install_isolated/setup.bash
+```
 ## demo
 ```bash
+# 模擬online邊走邊建置地圖,如果移動過快,導致計算跟不上,可能會建置失敗
 $ roslaunch cartographer_vlp16-imu_config demo_vlp16-imu.launch bag_filenames:=${HOME}/Downloads/2019-12-18-13-37-34.bag
 ```
 ## offline
 ```bash
+# 當計算完才會跑下一筆資料
 $ roslaunch cartographer_vlp16-imu_config offline_vlp16-imu.launch bag_filenames:=${HOME}/Downloads/2019-12-18-13-37-34.bag
 ```
   跑完後會產生2019-12-18-13-37-34.bag.pbstream,用於後續產生點雲圖與2d地圖  
@@ -37,6 +45,12 @@ $ roslaunch cartographer_vlp16-imu_config  assets_writer_vlp16-imu.launch \
   * 結果
   ![result](img/result.png)
 ## 其他
+  * 因為cartographer使用protobuf3, gazebo使用protobuf2,可以把cartographer的刪掉
+
+```
+$ rm -rf protobuf/
+$ catkin_make_isolated --install --use-ninja
+```
   * 不建議使用Google的point_cloud_viewer,編譯複雜且不易使用
     * ply->CloudCompare
     * pcd->pcl_viewer
@@ -52,3 +66,5 @@ $ roslaunch cartographer_vlp16-imu_config  assets_writer_vlp16-imu.launch \
     * [測試資料](https://drive.google.com/open?id=1yZdbekNmNkPBytlXquzZTz28PQBtAETj)
   * 其他測試bag
     * [cartographer_kitti_config](https://github.com/inkyusa/cartographer_kitti_config)
+  * 參考
+    * [TurtleBot3 SLAM](http://emanual.robotis.com/docs/en/platform/turtlebot3/slam/)
