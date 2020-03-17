@@ -1,4 +1,4 @@
-## cartographer_vlp16-imu_config
+# cartographer_vlp16-imu_config
   vlp16 + imu(fsm-9)的3d建圖測試  
   總之 跟cartographer放在一起編譯  
 ## map
