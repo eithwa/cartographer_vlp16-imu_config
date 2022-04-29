@@ -5,8 +5,7 @@
   * [淡江大學](https://www.google.com.tw/maps/@25.1752379,121.4520693,307a,35y,38.72h,0.56t/data=!3m1!1e3?hl=zh-TW&authuser=0)  
   ![tku](img/tku.jpg)
 ## bagfile
-  [2019-12-18-13-37-34.bag](https://drive.google.com/open?id=1YJY3EXCXTad67RsgrSPB3GPyhsPsDDoH)  
-  [其他資料](https://drive.google.com/open?id=1uZAqH_6JQV0LuT0MIumaLouNN_BezRu7)
+  [2019-12-18-13-37-34.bag](https://drive.google.com/drive/folders/1uZAqH_6JQV0LuT0MIumaLouNN_BezRu7?usp=sharing)  
 
 ## 編譯
 ```bash
